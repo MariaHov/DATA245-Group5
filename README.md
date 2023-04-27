@@ -3,7 +3,7 @@
 This project aims to predict the air quality in Beijing using machine learning techniques. The target column used for prediction is PM2.5, which is a measure of the concentration of fine particulate matter in the air. High levels of PM2.5 are harmful to human health, so predicting the PM2.5 levels can help individuals plan their outdoor activities and take necessary precautions.
 
 ## Data
-The dataset used for this project is the [Beijing PM2.5 Data Data Set](https://archive.ics.uci.edu/ml/datasets/Beijing+PM2.5+Data) from the UCI Machine Learning Repository. It contains hourly measurements of various air pollutants, including PM2.5, from 12 monitoring stations in Beijing from 2010 to 2015.
+The dataset used for this project is the (https://archive.ics.uci.edu/ml/datasets/Beijing+Multi-Site+Air-Quality+Data#) from the UCI Machine Learning Repository. It contains hourly measurements of various air pollutants, including PM2.5, from 12 monitoring stations in Beijing from 2010 to 2015.
 
 ## Approach
 The project uses machine learning algorithms to predict the PM2.5 levels based on historical data. The following steps are involved:

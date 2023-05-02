@@ -47,7 +47,8 @@ env\Scripts\activate  # Windows
 4. Install the required packages:
 
 ```
-pip install -r requirements.txt
+pip install numpy
+pip install pandas
 ```
 
 5. Launch Jupyter Notebook:

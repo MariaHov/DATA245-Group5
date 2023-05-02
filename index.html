@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Pollution</title>
+</head>
+
+<body>
+
+    <div style="color:Black">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Air pollution</h2>
+            <h3>PM10</h3><input id="first" name="PM10" required="required">
+            <h3>CO</h3><input id="second" name="CO" required="required">
+            <h3>DEWP</h3><input id="third" name="DEWP" required="required">
+            <h3>SO2</h3><input id="fourth" name="SO2" required="required">
+            <h3>TEMP</h3><input id="fifth" name="TEMP" required="required">
+            <h3>NO2</h3><input id="sixth" name="NO2" required="required">
+            <h3>PRES</h3><input id="seventh" name="PRES" required="required">
+            <h3>O3</h3><input id="eighth" name="O3" required="required">
+            <h3>WSPM</h3><input id="ninth" name="WSPM" required="required">
+            <br><br><button id="sub" type="submit ">Predict</button>
+            <br>
+        </form>
+
+        <br><br><h3 style="color: rgb(0, 1, 80); font-size: 40px; font-weight: bold;">{{ prediction_text }}</h3>
+
+    </div>
+
+
+
+
+    <style>
+
+        body {
+            background-image: url('https://climatekids.nasa.gov/resources/icons/air-pollution.png');
+            background-size: 70%;
+            background-attachment: fixed;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #research {
+            font-size: 18px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+        }
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+        
+        #fuel {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+        
+        #fuel:hover {
+            background-color: coral;
+        }
+        
+        #research {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #research:hover {
+            background-color: coral;
+        }
+        
+        #resea {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #resea:hover {
+            background-color: coral;
+        }
+        
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+        
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fifth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #sixth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #seventh {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #eighth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #ninth  {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+    </style>
+</body>
+
+</html>
